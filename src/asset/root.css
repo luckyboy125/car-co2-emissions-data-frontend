@@ -1,0 +1,73 @@
+.root {
+  padding: 0 30px;
+}
+
+.paragraph-root {
+  padding: 30px 0;
+  border-bottom: 1px solid #7a757526;
+}
+
+.paragraph-root .title {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.paragraph-root .title .title-important {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.paragraph-root .description {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.paragraph-root .detail-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph-root .detail-root .left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+.paragraph-root .detail-root .left-part .left-part-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.paragraph-root .detail-root .left-part .item-unique-count {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph-root .detail-root .left-part .item-unique {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph-root .detail-root .left-part .left-part-item .item-name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph-root .detail-root .left-part .left-part-item .item-percent {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,31 @@
+.root {
+  padding: 0 30px;
+}
+
+.green {
+  color: #01c483;
+}
+
+.blue {
+  color: #2abeeb;
+}
+
+.grey {
+  color: #9b9b9b;
+}
+
+.green-bg {
+  background-color: #01c483;
+}
+
+.orange-bg {
+  background-color: #e67214;
+}
+
+.red-bg {
+  background-color: #cf0707;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}

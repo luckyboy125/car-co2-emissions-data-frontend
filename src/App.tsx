@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./asset/public.css";
+import "./asset/root.css";
+import "./asset/analysis.css";
+import Analysis from "./component/Analysis";
 
 function App() {
   return (
     <div className="root">
-      <div className="make-root">
+      <div className="paragraph-root">
         <div className="title">
           <span className="title-important">A</span>Make
         </div>
@@ -24,49 +27,77 @@ function App() {
               <div className="item-percent grey">84%</div>
             </div>
           </div>
-          <div className="right-part">
-            <div className="right-part-item">
-              <div className="item-front">
-                <div className="item-name">
-                  Valid <div className="item-square green-bg"></div>
-                </div>
-                <div className="item-count">7385</div>
-              </div>
-              <div className="item-last grey">100%</div>
-            </div>
-            <div className="right-part-item">
-              <div className="item-front">
-                <div className="item-name">
-                  Mismatched <div className="item-square orange-bg"></div>
-                </div>
-                <div className="item-count">0</div>
-              </div>
-              <div className="item-last grey">0%</div>
-            </div>
-            <div className="right-part-item">
-              <div className="item-front">
-                <div className="item-name">
-                  Missing <div className="item-square red-bg"></div>
-                </div>
-                <div className="item-count">0</div>
-              </div>
-              <div className="item-last grey">0%</div>
-            </div>
-            <div className="right-part-item">
-              <div className="item-front">
-                <div className="item-name">Unique</div>
-                <div className="item-count">42</div>
-              </div>
-              <div className="item-last grey"></div>
-            </div>
-            <div className="right-part-item">
-              <div className="item-front">
-                <div className="item-name">Most Common</div>
-                <div className="item-count">FORD</div>
-              </div>
-              <div className="item-last grey">9%</div>
+          <Analysis
+            valid={7385}
+            valid_percent={100}
+            mismatched={0}
+            mismatched_percent={0}
+            missing={0}
+            missing_percent={0}
+            unique={42}
+            most_common="FORD"
+            most_common_percent={9}
+          />
+        </div>
+      </div>
+      <div className="paragraph-root">
+        <div className="title">
+          <span className="title-important">A</span>Model
+        </div>
+        <div className="description">Car Model</div>
+        <div className="detail-root">
+          <div className="left-part">
+            <div>
+              <div className="item-unique-count blue">2053</div>
+              <div className="item-unique">Unique Values</div>
             </div>
           </div>
+          <Analysis
+            valid={7385}
+            valid_percent={100}
+            mismatched={0}
+            mismatched_percent={0}
+            missing={0}
+            missing_percent={0}
+            unique={42}
+            most_common="FORD"
+            most_common_percent={9}
+          />
+        </div>
+      </div>
+      <div className="paragraph-root">
+        <div className="title">
+          <span className="title-important">A</span>Vehicle Class
+        </div>
+        <div className="description">
+          Class of vehicle depending on their utility, capacity and weight
+        </div>
+        <div className="detail-root">
+          <div className="left-part">
+            <div className="left-part-item">
+              <div className="item-name">SUV-SMALL</div>
+              <div className="item-percent blue">9%</div>
+            </div>
+            <div className="left-part-item">
+              <div className="item-name">MID-SIZE</div>
+              <div className="item-percent blue">9%</div>
+            </div>
+            <div className="left-part-item">
+              <div className="item-name grey">Other (5035)</div>
+              <div className="item-percent grey">84%</div>
+            </div>
+          </div>
+          <Analysis
+            valid={7385}
+            valid_percent={100}
+            mismatched={0}
+            mismatched_percent={0}
+            missing={0}
+            missing_percent={0}
+            unique={42}
+            most_common="FORD"
+            most_common_percent={9}
+          />
         </div>
       </div>
     </div>
